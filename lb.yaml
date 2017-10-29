@@ -1,3 +1,8 @@
 libtins:
   libtins-dev:
-     - file://.
+      build:
+        - make -f Makefile.lb all
+      install:
+        - make -f Makefile.lb install
+      deps:
+        - file://.
